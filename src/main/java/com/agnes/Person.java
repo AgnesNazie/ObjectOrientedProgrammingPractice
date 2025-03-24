@@ -37,12 +37,30 @@ class Teacher extends Person {
 
     //create constructor for teacher class
     public Teacher(String name, int age, String subject) {
-        super(name,age);
+        super(name, age);
         this.subject = subject;
     }
+
     @Override
     public void introduce() {
         System.out.println("Hello, ny name is " + name + " and i am " + age + " years old." + " I am teaching " + subject);
+    }
+}
+class Employee extends Person {
+    String employeeID;
+    String department;
+
+    //create a constructor for the employee class
+    public Employee(String name, int age, String employeeID, String department) {
+        super(name , age);
+        this.employeeID = employeeID;
+        this.department = department;
+    }
+    // create @override
+    @Override
+    public void introduce() {
+        System.out.println("Hello, ny name is " + name + " and i am " + age + " years old.");
+        System.out.println("My employeeID is " + employeeID + " and I work at the " + department +  "department");
     }
 
 public  static void main (String[] args) {
@@ -54,6 +72,9 @@ public  static void main (String[] args) {
 
         Teacher teacher = new Teacher("Javan", 35, "programming");
         teacher.introduce();
+
+        Employee employee = new Employee("Simon", 34, "L1234", "Human resource");
+        employee.introduce();
 }
 
 }
