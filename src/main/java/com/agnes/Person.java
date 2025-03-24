@@ -20,16 +20,18 @@ public class Person {
 
 class Student1 extends Person {
     String studentId;
+    char grade;
 
     // create constructor for student class
-    public Student1(String name, int age, String studentId) {
+    public Student1(String name, int age, String studentId, char grade) {
         super(name, age);
         this.studentId = studentId;
+        this.grade = grade;
     }
 
     @Override
     public void introduce() {
-        System.out.println("Hello, ny name is " + name + " and i am " + age + " years old." + " my Student ID is " + studentId);
+        System.out.println("Hello, ny name is " + name + " and i am " + age + " years old." + " my Student ID is " + studentId + " and my grade is " + grade);
     }
 }
 class Teacher extends Person {
@@ -67,7 +69,7 @@ public  static void main (String[] args) {
         Person person = new Person("Nazie", 29);
         person.introduce();
 
-        Student1 student = new Student1("Agnes" , 25, "G551234");
+        Student1 student = new Student1("Agnes" , 25, "G551234", 'A');
         student.introduce();
 
         Teacher teacher = new Teacher("Javan", 35, "programming");
