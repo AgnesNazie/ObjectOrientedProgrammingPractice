@@ -11,11 +11,25 @@ public class Book {
 
  public static class Info {
         public static void main(String[] args) {
-            Book bi = new Book();
-            bi.title = "Mr Bing";
-            bi.author = " Agnes Nazie";
-            bi.pages = 12;
-            bi.bookInfo();
+            Book b1 = new Book();
+            b1.title = "Mr Bing";
+            b1.author = " Agnes Nazie";
+            b1.pages = 12;
+            b1.bookInfo();
+
+            Book b2 = new Book();
+            b2.title = "My life";
+            b2.author = "M & B Key";
+            b2.pages = 100;
+            b2.bookInfo();
+
+            Book b3 = new Book();
+            b3.title = "My wife";
+            b3.author = "Fidelis Fuche";
+            b3.pages = 500;
+            b3.bookInfo();
+
+
 
 
         }
