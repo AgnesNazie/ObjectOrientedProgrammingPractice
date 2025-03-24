@@ -18,7 +18,7 @@ public static class SimpleCalculator {
         public static void main(String[] args) {
             Calculator operations = new Calculator();
             operations.a = 20;
-            operations.b = 30;
+            operations.b = 10;
             operations.add();
             operations.multiply();
 

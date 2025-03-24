@@ -8,6 +8,10 @@ public class Student {
     String favouriteSubject;
     String hobby;
     int marks;
+    int mathScore;
+    int englishScore;
+    int sum;
+    int totalScores;
 
     //Create a method study() that prints:
     //“[name] is studying [favoriteSubject].
@@ -24,6 +28,10 @@ public class Student {
     }
     void doHobby() {
         System.out.println(name + " Loves to " + hobby);
+    }
+    void totalScores() {
+        sum = mathScore + englishScore;
+        System.out.println (name + " total score is " + sum);
     }
 }
 
