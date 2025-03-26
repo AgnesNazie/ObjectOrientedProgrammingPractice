@@ -19,7 +19,7 @@ public class Student {
         System.out.println("I'm " + name + " and I'm studying " + favouriteSubject + ".");
     }
 
-    void checkpass() {
+    void checkPass() {
         if (marks >= 50) {
             System.out.println(name + " passed");
         } else {

@@ -13,7 +13,7 @@ public class School {
         s1.marks = 45;
         s1.hobby = "Study";
         s1.study();
-        s1.checkpass();
+        s1.checkPass();
         s1.doHobby();
 
 
@@ -23,7 +23,7 @@ public class School {
         s2.marks = 90;
         s2.hobby = "teach";
         s2.study();
-        s2.checkpass();
+        s2.checkPass();
         s2.doHobby();
 
         Student s3 = new Student();
@@ -32,7 +32,7 @@ public class School {
         s3.marks = 89;
         s3.hobby = "fun";
         s3.study();
-        s3.checkpass();
+        s3.checkPass();
         s3.doHobby();
 
     }
